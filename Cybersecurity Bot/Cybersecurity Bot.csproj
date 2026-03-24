@@ -8,4 +8,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="cybersecurity %28online-audio-converter.com%29 %281%29.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="cybersecurity (online-audio-converter.com) (1).wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Windows.Extensions" Version="6.0.0" />
+  </ItemGroup>
+
 </Project>
