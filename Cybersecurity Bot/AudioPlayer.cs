@@ -49,26 +49,26 @@ namespace CybersecurityBot
             {
                 if (File.Exists(audioFilePath))
                 {
-                    Console.WriteLine($"\n[🎵] Playing greeting from: {Path.GetFileName(audioFilePath)}");
+                    Console.WriteLine($"\n Playing greeting from: {Path.GetFileName(audioFilePath)}");
 
                     using (SoundPlayer player = new SoundPlayer(audioFilePath))
                     {
                         player.PlaySync(); // Wait for audio to finish
                     }
 
-                    Console.WriteLine("[✓] Greeting complete!");
+                    Console.WriteLine(" Greeting complete!");
                 }
                 else
                 {
-                    Console.WriteLine($"\n[⚠️] Audio file not found: {audioFilePath}");
-                    Console.WriteLine("[🎵] Using text greeting instead:");
+                    Console.WriteLine($"\n Audio file not found: {audioFilePath}");
+                    Console.WriteLine(" Using text greeting instead:");
                     ShowTextGreeting();
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"\n[❌] Audio error: {ex.Message}");
-                Console.WriteLine("[🎵] Using text greeting instead:");
+                Console.WriteLine($"\n Audio error: {ex.Message}");
+                Console.WriteLine(" Using text greeting instead:");
                 ShowTextGreeting();
             }
         }

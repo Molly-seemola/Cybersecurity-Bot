@@ -21,7 +21,7 @@ namespace CybersecurityBot
             AsciiArt.DisplayLogo();
             
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\n[🎵 Starting bot...]");
+            Console.WriteLine("\n[ Starting bot...]");
             audioPlayer.PlayGreeting();
             
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -36,14 +36,14 @@ namespace CybersecurityBot
         private void GetUserName()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("\n[🤖] May I have your name? ");
+            Console.Write("\n May I have your name? ");
             Console.ForegroundColor = ConsoleColor.White;
             userName = Console.ReadLine();
             
             while (string.IsNullOrWhiteSpace(userName))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("[⚠️] I didn't catch that. What's your name? ");
+                Console.Write(" I didn't catch that. What's your name? ");
                 Console.ForegroundColor = ConsoleColor.White;
                 userName = Console.ReadLine();
             }
@@ -56,7 +56,7 @@ namespace CybersecurityBot
             AsciiArt.DisplayDivider();
             
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"\n🌟 Welcome, {userName}! 🌟");
+            Console.WriteLine($"\n Welcome, {userName}! ");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nI'm your personal Cybersecurity Awareness Assistant.");
             Console.WriteLine("I'm here to help you stay safe and secure online.\n");
@@ -65,7 +65,7 @@ namespace CybersecurityBot
             AsciiArt.DisplayDivider();
             
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n📚 You can ask me about:");
+            Console.WriteLine("\n You can ask me about:");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("  • Password safety");
             Console.WriteLine("  • Phishing attacks");
@@ -73,7 +73,7 @@ namespace CybersecurityBot
             Console.WriteLine("  • General cybersecurity tips");
             
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("\n💡 Try asking: 'How are you?' or 'What's your purpose?'");
+            Console.WriteLine("\n Try asking: 'How are you?' or 'What's your purpose?'");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("\nType 'exit', 'quit', or 'bye' to end the conversation.\n");
             AsciiArt.DisplayDivider();
@@ -93,7 +93,7 @@ namespace CybersecurityBot
                 if (string.IsNullOrWhiteSpace(input))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\n[🤖] I didn't quite understand that. Could you rephrase?");
+                    Console.WriteLine("\n I didn't quite understand that. Could you rephrase?");
                     continue;
                 }
                 
@@ -121,9 +121,9 @@ namespace CybersecurityBot
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"\n\nThank you for chatting with me, {userName}!");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            AsciiArt.TypeWriterEffect("\nRemember: Stay safe online! 🔒", 40);
+            AsciiArt.TypeWriterEffect("\nRemember: Stay safe online! ", 40);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n\nGoodbye! Have a secure day! 🌟");
+            Console.WriteLine("\n\nGoodbye! Have a secure day! ");
             Console.ResetColor();
             Thread.Sleep(2000);
         }
