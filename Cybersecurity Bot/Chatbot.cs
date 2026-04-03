@@ -53,7 +53,7 @@ namespace CybersecurityBot
         {
             Console.Clear();
             AsciiArt.DisplayLogo();
-            AsciiArt.DisplayDivider();
+            AsciiArt.DisplayDivider() ;
             
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"\n Welcome, {userName}! ");
