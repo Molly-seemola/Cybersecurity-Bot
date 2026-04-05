@@ -38,7 +38,7 @@ namespace CybersecurityBot
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("\n May I have your name? ");
             Console.ForegroundColor = ConsoleColor.White;
-            userName = Console.ReadLine() ;
+            userName = Console.ReadLine();
             
             while (string.IsNullOrWhiteSpace(userName))
             {
