@@ -4,13 +4,13 @@
 A console chatbot that teaches cybersecurity through conversation with voice greeting, ASCII art, and personalized responses.
 
 ## Features
-- 🎵 Voice greeting (greeting.wav)
-- 🎨 ASCII art logo and shield
-- 💬 Personalized chat (asks for your name)
-- 🔐 Answers about passwords, phishing, safe browsing
-- 🛡️ Handles invalid inputs gracefully
-- 🎨 Colored text + typing effect
-- 📁 Clean code with multiple classes
+-  Voice greeting (greeting.wav)
+-  ASCII art logo and shield
+-  Personalized chat (asks for your name)
+-  Answers about passwords, phishing, safe browsing
+-  Handles invalid inputs gracefully
+-  Colored text + typing effect
+-  Clean code with multiple classes
 
 ## Files
 - Program.cs - Main entry
@@ -23,17 +23,17 @@ A console chatbot that teaches cybersecurity through conversation with voice gre
 1. `dotnet build`
 2. `dotnet run`
 3. Add `greeting.wav` for voice (optional)
-🤖] May I have your name? John
-🌟 Welcome, John! 🌟
+] May I have your name? John
+ Welcome, John! 
 
 [John] > How are you?
-[🤖] I'm functioning optimally!
+[] I'm functioning optimally!
 
 [John] > Tell me about passwords
-[🤖] Strong passwords need letters, numbers, and symbols.
+[] Strong passwords need letters, numbers, and symbols.
 
 [John] > bye
-[🤖] Goodbye John! Stay safe! 🔒
+[] Goodbye John! Stay safe! 
 
 text
 
